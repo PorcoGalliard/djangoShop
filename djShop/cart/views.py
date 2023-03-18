@@ -19,6 +19,7 @@ def cart_add(request, product_id):
         cart.add(product=product,
                  quantity=cd['quantity'],
                  override_quantity=cd['override'])
+    # redirect used for redirecting the user to another page
     return redirect('cart:cart_detail')
 
 
